@@ -1,0 +1,26 @@
+{
+  "name": "user-management-app-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node 06-advanced-types/02-mapped_types.ts",
+    "dev": "tsx --watch 06-advanced-types/01-utility-types.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bohdan-Dubchak/User-Management-APP-TS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Bohdan-Dubchak/User-Management-APP-TS/issues"
+  },
+  "homepage": "https://github.com/Bohdan-Dubchak/User-Management-APP-TS#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
