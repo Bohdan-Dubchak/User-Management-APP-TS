@@ -1,0 +1,61 @@
+/* --------------- КОНТЕЙНЕРИ --------------- */
+.container {
+    padding: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-section {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* --------------- ЗАГОЛОВКИ --------------- */
+.title {
+    margin: 0;
+    color: var(--color-text-light);
+    font-size: 42px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* --------------- КОНТЕЙНЕР КОРИСТУВАЧІВ --------------- */
+.users-container {
+    margin: 0 auto;
+    padding: var(--gap-large) 0 50px 0;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--gap-medium);
+    flex-wrap: wrap;
+    min-height: 200px;
+}
+
+/* --------------- АДАПТИВНІСТЬ --------------- */
+@media (max-width: 768px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .users-container {
+        gap: var(--gap-medium);
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 28px;
+    }
+
+    .users-container {
+        padding: 15px 10px 30px 10px;
+    }
+}
