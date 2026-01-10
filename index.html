@@ -4,11 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User-Management-APP</title>
+    <title>User App</title>
+
+    <link rel="icon" type="image/png" href="assets/img/icon-ts.png">
+
+    <link rel="stylesheet" href="css/base/reset.css">
+    <link rel="stylesheet" href="css/base/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/components/form.css">
+    <link rel="stylesheet" href="css/components/user-card.css">
+    <link rel="stylesheet" href="css/components/dialog.css">
+
+    <script type="module" src="main.ts" defer></script>
 </head>
 
 <body>
+    <!-- Основний контейнер -->
+    <div class="container">
+        <!-- Секція форми створення користувача -->
+        <section class="login-section">
+            <h1 class="title">User Manager</h1>
 
+            <div class="form-block">
+                <form class="form" data-create-user-form>
+                    <!-- Поле імені -->
+                    <div class="control-field">
+                        <label for="nameId" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="nameId" name="userName" required minlength="2"
+                            maxlength="23" placeholder="Enter name">
+                    </div>
+
+                    <!-- Поле міста -->
+                    <div class="control-field">
+                        <label for="cityId" class="form-label">City</label>
+                        <input type="text" class="form-control" id="cityId" name="userCity" required minlength="2"
+                            maxlength="20" placeholder="Enter city">
+                    </div>
+
+                    <!-- Поле email -->
+                    <div class="control-field">
+                        <label for="emailId" class="form-label">Email</label>
+                        <input type="email" class="form-control form-control--email" id="emailId" name="userEmail"
+                            required placeholder="example@email.com">
+                    </div>
+
+                    <div class="control-field">
+                        <label for="imagesUrlId" class="form-label">Avatar</label>
+                        <select name="userImageUrl" id="imagesUrlId" class="form-control form-control--images" required>
+                            <option value="">Select avatar</option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=88cc30ba21222ee61db2d32974a5b380259ee41f-3380069-images-thumbs&n=13">
+                                🐱 Cat 1
+                            </option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=6444bd82bce43803b8ad0601c12a80e7-5230955-images-thumbs&n=13">
+                                🐱 Cat 2
+                            </option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=60f5028735fd33706fd8e50bb1d7f636062b21a4-8210619-images-thumbs&n=13">
+                                🐱 Cat 3
+                            </option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=ae0521f7a56e37beaa15c3469ab4c338e350c501-4453150-images-thumbs&n=13">
+                                🐶 Dog 1
+                            </option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=fec854b859968252cfa2ac789041838662475e7e-4667938-images-thumbs&n=13">
+                                🐶 Dog 2
+                            </option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=26253ff7e734e6fd0431b2fbc2b4a1a669ed2685be8a39d1-9148232-images-thumbs&n=13">
+                                🐶 Dog 3
+                            </option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=eaed52ea5bd298c60ff850710e5d05ddd9d26b49-8082760-images-thumbs&n=13">
+                                🐺 Wolf 1
+                            </option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=730e0bcc75f17fff296adf3dcdaae2036067665ec12d546e-12645552-images-thumbs&n=13">
+                                🦊 Fox 1
+                            </option>
+                        </select>
+                    </div>
+
+                    <!-- Кнопка створення -->
+                    <button type="submit" class="btn submit-btn">Create User</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <!-- Розділювач -->
+    <hr>
+
+    <!-- Контейнер для карток користувачів -->
+    <div class="users-container" data-users-container>
+        <!-- Картки користувачів будуть додані динамічно через JavaScript -->
+    </div>
+
+    <!-- Модальне вікно для редагування користувача -->
+    <dialog class="edit-form-dialog" data-edit-user-form-dialog>
+        <!-- Форма редагування буде додана динамічно через JavaScript -->
+    </dialog>
 </body>
 
 </html>
