@@ -1,0 +1,124 @@
+/* --------------- КАРТКИ КОРИСТУВАЧІВ --------------- */
+.user-card {
+    max-width: 350px;
+    min-width: 350px;
+    height: 300px;
+    flex-shrink: 0;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-large);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: var(--gradient-bg);
+    color: var(--color-text-light);
+    position: relative;
+    box-shadow: var(--shadow-card);
+    transition: all var(--transition-medium);
+}
+
+.user-card:hover {
+    box-shadow: var(--shadow-card-hover);
+    transform: translateY(-5px);
+}
+
+.user-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    color: var(--color-text-light);
+    word-break: break-word;
+}
+
+.user-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.user-card span {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.9);
+    word-break: break-word;
+}
+
+.user-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-top: auto;
+    border-radius: var(--border-radius);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    object-fit: cover;
+}
+
+/* Кнопки на картці */
+.user-edit-btn,
+.user-remove-btn {
+    position: absolute;
+    top: 4px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 6px 10px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 16px;
+    transition: all var(--transition-fast);
+    backdrop-filter: blur(5px);
+}
+
+.user-edit-btn {
+    right: 52px;
+}
+
+.user-remove-btn {
+    right: 4px;
+}
+
+.user-edit-btn:hover,
+.user-remove-btn:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.15);
+    border-color: var(--color-text-light);
+}
+
+.user-edit-btn:active,
+.user-remove-btn:active {
+    transform: scale(1);
+}
+
+.user-edit-btn:focus-visible,
+.user-remove-btn:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* --------------- АНІМАЦІЇ --------------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-card {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .user-card {
+        max-width: 100%;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-card {
+        min-width: 100%;
+    }
+}
