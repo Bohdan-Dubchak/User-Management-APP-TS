@@ -1,0 +1,29 @@
+:root {
+    /* Кольори */
+    --color-primary: #377bcf;
+    --color-primary-hover: #2a5fa3;
+    --color-bg-dark: #20222b;
+    --color-text-light: #fff;
+    --color-text-dark: #000;
+    --color-border: #2f2f2f;
+    --color-error: #ff6b6b;
+    --color-success: #51cf66;
+
+    /* Градієнти */
+    background: linear-gradient(365deg, rgba(20, 9, 135, 1) 0%, rgba(14, 14, 181, 1) 35%, rgba(9, 152, 181, 1) 100%);
+
+    /* Розміри */
+    --border-radius: 4px;
+    --border-radius-large: 5px;
+    --gap-small: 2px;
+    --gap-medium: 10px;
+    --gap-large: 20px;
+
+    /* Тіні */
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.2);
+    --shadow-card-hover: 0 0 15px 8px var(--color-primary);
+
+    /* Переходи */
+    --transition-fast: 0.2s ease;
+    --transition-medium: 0.3s ease;
+}
