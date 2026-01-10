@@ -1,0 +1,12 @@
+/* Базові стилі */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+/* 
+
+/* Layout  */
+@import url('./layout/container.css');
+
+/* Компоненти */
+@import url('./components/form.css');
+@import url('./components/user-card.css');
+@import url('./components/dialog.css');
