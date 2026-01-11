@@ -129,6 +129,7 @@ export const populateDialog = (userId: string, dialog: HTMLDialogElement): void 
 
     const closeBtn = document.createElement("button");
     closeBtn.type = "button";
+    closeBtn.classList.add("close-edit-form-btn");
     closeBtn.textContent = "❌";
     closeBtn.addEventListener("click", () => dialog.close());
 
