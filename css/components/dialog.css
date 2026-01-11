@@ -23,10 +23,6 @@
     color: var(--color-text-dark);
 }
 
-.edit-form-dialog .form-control {
-    color: var(--color-text-dark);
-}
-
 .edit-form-dialog .close-edit-form-btn {
     position: absolute;
     top: 3px;
