@@ -1,11 +1,11 @@
 
 // Ініціалізація додатку, підключення всіх модулів
-import { SELECTORS, MESSAGES } from "./src/config/constants";
-import { userService } from "./src/services/userService";
-import { store } from "./src/state/store";
-import { renderUsers } from "./src/components/userCard";
-import { handleCreateUser } from "./src/handlers/formHandlers";
-import { handleContainerClick } from "./src/handlers/userHandlers";
+import { SELECTORS, MESSAGES } from "./config/constants";
+import { userService } from "./services/userService";
+import { store } from "./state/store";
+import { renderUsers } from "./components/userCard";
+import { handleCreateUser } from "./handlers/formHandlers";
+import { handleContainerClick } from "./handlers/userHandlers";
 
 // DOM елементи
 const createUserForm = document.querySelector<HTMLFormElement>(
