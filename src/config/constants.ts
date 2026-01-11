@@ -2,7 +2,7 @@
 
 // API конфігурація 
 export const API_CONFIG = {
-    BASE_URL: "https://693c9d53b762a4f15c40ebcc.mockapi.io/user"
+    BASE_URL: "https://6962fd062d146d9f58d279ae.mockapi.io/User"
 } as const;
 
 // Слектори DOM елементів 
