@@ -24,6 +24,20 @@ const createEditFormHTML = (userId: string): string => {
         </div>
 
         <div class="control-field">
+            <label for="editCityId" class="form-label">City</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="editCityId" 
+                name="userCity" 
+                required 
+                minlength="2" 
+                maxlength="20"
+                placeholder="Enter city"
+            >
+        </div>
+
+        <div class="control-field">
             <label for="editEmailId" class="form-label">Email</label>
             <input
                 type="email"
