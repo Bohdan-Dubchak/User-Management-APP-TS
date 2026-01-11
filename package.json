@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && vite build",
     "start": "ts-node 06-advanced-types/02-mapped_types.ts",
-    "dev": "tsx --watch 06-advanced-types/01-utility-types.ts"
+    "watch": "tsx --watch 06-advanced-types/01-utility-types.ts",
+    "dev": "vite",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -21,6 +23,7 @@
   },
   "homepage": "https://github.com/Bohdan-Dubchak/User-Management-APP-TS#readme",
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   }
 }
